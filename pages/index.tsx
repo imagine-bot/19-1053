@@ -1,13 +1,13 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+// ./pages/index.tsx
+import React from 'react';
+import PricingPlans from '../components/PricingPlans';
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-    </main>
-  )
-}
+    <div className="container mx-auto">
+      <PricingPlans />
+    </div>
+  );
+};
+
+export default Home;
